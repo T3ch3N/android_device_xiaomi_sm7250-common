@@ -10,7 +10,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-corvus
+    $(LOCAL_PATH)/overlay-nad
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
     KeyHandler
 
 PRODUCT_COPY_FILES += \
-    vendor/corvus/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/nusantara/prebuilt/common/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 endif
 
 PRODUCT_PACKAGES += \
