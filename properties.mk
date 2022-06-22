@@ -364,6 +364,11 @@ persist.vendor.sensors.sync_request=true
 PRODUCT_VENDOR_PROPERTIES += \
 sys.vendor.shutdown.waittime=500
 
+# Spark-OS
+ro.spark.device.name=Mi 10 Lite 5G
+ro.spark.maintainer=TecheN
+ro.spark.maintainer.username=TecheN 
+
 # USB
 PRODUCT_VENDOR_PROPERTIES += \
 vendor.usb.diag.func.name=diag \

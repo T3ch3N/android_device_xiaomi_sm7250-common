@@ -82,7 +82,7 @@ BOARD_HAVE_QCOM_FM := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/framework_compatibility_matrix.xml \
-        vendor/evolution/config/device_framework_matrix.xml
+        vendor/spark/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
@@ -102,7 +102,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
 ifeq (monet,$(PRODUCT_DEVICE))
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 KERNEL_SUPPORTS_LLVM_TOOLS := true
-TARGET_KERNEL_CLANG_VERSION := lolz
+TARGET_KERNEL_CLANG_VERSION := r416183b1
 endif
 
 # Partitions
